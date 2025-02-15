@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+#movieDetails {
+    margin-top: 20px;
+}
+
+.movie-poster {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 90%;
+        margin: 15% auto;
+        padding: 15px;
+    }
+    
+    .search-box {
+        gap: 5px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        align-self: center;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 95%;
+        margin: 20% auto;
+    }
+
+    .movie-poster {
+        width: 80%;
+        max-width: 150px;
+    }
+}
